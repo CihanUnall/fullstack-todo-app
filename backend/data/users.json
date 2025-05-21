@@ -2,15 +2,11 @@
   {
     "userID": "u1",
     "username": "MaMu",
-    "password": "LoginPW123!",
-    "firstname": "Max",
-    "lastname": "Mustermann"
+    "password": "LoginPW123!"
   },
   {
     "userID": "u2",
     "username": "LiLu",
-    "password": "LoginPW123!",
-    "firstname": "Lisa",
-    "lastname": "Lustig"
+    "password": "LoginPW123!"
   }
 ]

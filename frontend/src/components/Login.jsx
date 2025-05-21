@@ -10,9 +10,9 @@ function Login() {
   useEffect(() => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
-    const hasDefaultUser = users.some((u) => u.username === "user");
+    const hasDefaultUser = users.some((u) => u.username === "peter");
     if (!hasDefaultUser) {
-      users.push({ username: "user", password: "1234" });
+      users.push({ username: "peter", password: "1234" });
       localStorage.setItem("users", JSON.stringify(users));
     }
   }, []);
@@ -28,7 +28,7 @@ function Login() {
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       window.dispatchEvent(new Event("loginStateChange"));
-      alert("Login successful!");
+      alert(`Wellcome ${form.username}!`);
       navigate("/todo");
     } else {
       alert("Invalid username or password.");

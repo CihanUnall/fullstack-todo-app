@@ -18,5 +18,10 @@
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.25.0",
     "sass": "^1.89.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

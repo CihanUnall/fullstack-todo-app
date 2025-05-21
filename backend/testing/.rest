@@ -1,4 +1,5 @@
-POST http://localhost:5000/login
+### Login Test
+POST http://localhost:3000/login
 Content-Type: application/json
 
 {
@@ -6,10 +7,32 @@ Content-Type: application/json
   "password": "LoginPW123!"
 }
 
-###
-POST http://localhost:5000/todos
+### Get Todos Test
+POST  http://localhost:3000/todos
 Content-Type: application/json
 
 {
-  "username": "MaMu"
+  
+   "username": "MaMu",
+    "userID": "u1"
 }
+
+### Add Todo Test
+POST http://localhost:3000/todos/add
+Content-Type: application/json
+
+{
+  "userID": 1,
+  "text": "New Todo"
+}
+
+### Update Todo Test
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+  "state": false
+}
+
+### Delete Todo Test
+DELETE http://localhost:3000/todos/1
