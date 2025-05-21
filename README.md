@@ -12,3 +12,5 @@
 - npm i
 - npm create vite@latest
 - npm run dev
+- npm install react-router-dom@6
+- npm install sass --save-dev
